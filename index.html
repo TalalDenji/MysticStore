@@ -1,110 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Site Maintenance</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Store | Elite Gaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Reset and Base Styles */
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #000000;
-            color: #333;
-        }
-
-        /* Flexbox for vertical and horizontal centering */
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            text-align: center;
-            padding: 20px;
-        }
-
-        /* The white card container */
-        .content {
-            background: white;
-            padding: 40px 50px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            max-width: 600px;
-            width: 100%;
-        }
-
-        /* Typography */
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #000000;
-        }
-        
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #666;
-            margin-bottom: 25px;
-        }
-
-        /* Button Styling */
-        .btn {
-            display: inline-block;
-            padding: 10px 25px;
-            background-color: #001086;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            font-weight: 600;
-        }
-
-        .btn:hover {
-            background-color: #001086;
-        }
-
-        /* SVG Icon Animation */
-        .icon {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 20px;
-            fill: #001086;
-            animation: spin 4s linear infinite;
-        }
-
-        @keyframes spin {
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Mobile Adjustments */
-        @media (max-width: 600px) {
-            .content {
-                padding: 30px 20px;
-            }
-            h1 {
-                font-size: 1.5rem;
-            }
-        }
+        :root { --red: #ff0000; --blue: #0084ff; --black: #000000; }
+        body { font-family: 'Rajdhani', sans-serif; background-color: var(--black); color: #ffffff; scroll-behavior: smooth; overflow-x: hidden; }
+        .font-gaming { font-family: 'Orbitron', sans-serif; }
+        .hover-glow:hover { box-shadow: 0 0 25px rgba(255, 0, 0, 0.4); transform: translateY(-5px); border-color: var(--red); }
+        .nav-link:hover { color: var(--red); text-shadow: 0 0 10px var(--red); }
+        .founder-card { border: 1px solid #222; background: linear-gradient(145deg, #000, #111); }
+        .owner-card { border: 1px solid var(--blue); background: linear-gradient(145deg, #000, #001533); }
+        .admin-card { border: 1px solid var(--red); background: linear-gradient(145deg, #000, #220000); }
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #000; }
+        ::-webkit-scrollbar-thumb { background: var(--red); }
+        .hero-gradient { background: radial-gradient(circle at center, rgba(255,0,0,0.1) 0%, transparent 80%); }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="content">
-            <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.14,12.94c0.04-0.3,0.06-0.61,0.06-0.94c0-0.32-0.02-0.64-0.07-0.94l2.03-1.58c0.18-0.14,0.23-0.41,0.12-0.61 l-1.92-3.32c-0.12-0.22-0.37-0.29-0.59-0.22l-2.39,0.96c-0.5-0.38-1.03-0.7-1.62-0.94L14.4,2.81c-0.04-0.24-0.24-0.41-0.48-0.41 h-3.84c-0.24,0-0.43,0.17-0.47,0.41L9.25,5.35C8.66,5.59,8.12,5.92,7.63,6.29L5.24,5.33c-0.22-0.08-0.47,0-0.59,0.22L2.74,8.87 C2.62,9.08,2.66,9.34,2.86,9.48l2.03,1.58C4.84,11.36,4.8,11.69,4.8,12s0.02,0.64,0.07,0.94l-2.03,1.58 c-0.18,0.14-0.23,0.41-0.12,0.61l1.92,3.32c0.12,0.22,0.37,0.29,0.59,0.22l2.39-0.96c0.5,0.38,1.03,0.7,1.62,0.94l0.36,2.54 c0.05,0.24,0.24,0.41,0.48,0.41h3.84c0.24,0,0.43-0.17,0.47-0.41l0.36-2.54c0.59-0.24,1.13-0.56,1.62-0.94l2.39,0.96 c0.22,0.08,0.47,0,0.59-0.22l1.92-3.32c0.12-0.22,0.07-0.47-0.12-0.61L19.14,12.94z M12,15.6c-1.98,0-3.6-1.62-3.6-3.6 s1.62-3.6,3.6-3.6s3.6,1.62,3.6,3.6S13.98,15.6,12,15.6z"/>
-            </svg>
-
-            <h1>Mystic-Store | Maintenance!</h1>
-            <p>Sorry for the inconvenience. We’re currently making a maintenance for the Mystic-Store website contact our support for more info.</p>
-            <p>                                               https://discord.gg/DbqbPU62                                        </p>
-            <p>                              You Can Also Contacting Us From The Gmail Just Click On Contact Support Button!</p>
-            <p style="font-size: 0.9rem;">Need urgent assistance?</p>
-            <a href="mailto:companypixelwave@gmail.com" class="btn">Contact Support</a>
+    <nav class="flex justify-between items-center px-6 md:px-16 py-5 sticky top-0 z-50 bg-black/95 backdrop-blur-md border-b border-white/5">
+        <div class="font-gaming text-xl md:text-2xl font-black italic">
+            MYSTIC<span class="text-red-600">STORE</span>
         </div>
-    </div>
+        <div class="hidden md:flex gap-10 font-gaming text-[10px] tracking-[0.2em]">
+            <a href="#" class="nav-link transition-all">HOME</a>
+            <a href="#stock" class="nav-link transition-all">STOCK</a>
+            <a href="#staff" class="nav-link transition-all">STAFF</a>
+        </div>
+        <a href="https://discord.com/channels/1454523521295188115/1455249938337239264" 
+           class="bg-red-600 hover:bg-white hover:text-black text-white px-4 md:px-6 py-2 font-gaming text-[9px] md:text-[11px] font-bold transition-all duration-500">
+            OPEN TICKET
+        </a>
+    </nav>
 
+    <header class="min-h-[80vh] flex flex-col justify-center items-center text-center px-6 hero-gradient">
+        <h1 class="font-gaming text-4xl md:text-8xl font-black mb-4 tracking-tighter italic" data-aos="zoom-out">
+            MYSTIC <span class="text-red-600">EMPIRE</span>
+        </h1>
+        <p class="text-gray-400 text-sm md:text-xl tracking-[0.3em] uppercase mb-10" data-aos="fade-up" data-aos-delay="200">
+            The Future of Digital Services
+        </p>
+        <a href="#stock" class="bg-red-600 px-8 md:px-12 py-3 md:py-4 font-gaming text-sm font-bold hover:tracking-widest transition-all" data-aos="fade-up" data-aos-delay="400">
+            EXPLORE
+        </a>
+    </header>
+
+    <section id="staff" class="py-20 container mx-auto px-6">
+        <h2 class="font-gaming text-2xl md:text-4xl mb-12 text-center" data-aos="fade-down">LEADERSHIP</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+            <div class="founder-card p-6 md:p-8 rounded-xl text-center hover-glow transition-all" data-aos="fade-up">
+                <i class="fa-solid fa-crown text-gray-600 text-2xl md:text-4xl mb-4"></i>
+                <h3 class="font-gaming text-sm md:text-xl mb-1">iTalali</h3>
+                <span class="text-[8px] md:text-[10px] tracking-widest font-bold text-gray-500 uppercase">Founder</span>
+            </div>
+            <div class="founder-card p-6 md:p-8 rounded-xl text-center hover-glow transition-all" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-crown text-gray-600 text-2xl md:text-4xl mb-4"></i>
+                <h3 class="font-gaming text-sm md:text-xl mb-1">Fahad</h3>
+                <span class="text-[8px] md:text-[10px] tracking-widest font-bold text-gray-500 uppercase">Founder</span>
+            </div>
+            <div class="owner-card p-6 md:p-8 rounded-xl text-center hover-glow transition-all shadow-[0_0_15px_rgba(0,132,255,0.1)]" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-shield-halved text-blue-500 text-2xl md:text-4xl mb-4"></i>
+                <h3 class="font-gaming text-sm md:text-xl mb-1 text-blue-500">Maggie</h3>
+                <span class="text-[8px] md:text-[10px] tracking-widest font-bold text-blue-400 uppercase">Owner</span>
+            </div>
+            <div class="admin-card p-6 md:p-8 rounded-xl text-center hover-glow transition-all shadow-[0_0_15px_rgba(255,0,0,0.1)]" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-solid fa-user-shield text-red-600 text-2xl md:text-4xl mb-4"></i>
+                <h3 class="font-gaming text-sm md:text-xl mb-1 text-red-600">S7</h3>
+                <span class="text-[8px] md:text-[10px] tracking-widest font-bold text-red-500 uppercase">Admin</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="stock" class="py-20 bg-[#020202]">
+        <div class="container mx-auto px-6">
+            <h2 class="font-gaming text-2xl md:text-4xl mb-12 border-l-4 border-red-600 pl-4" data-aos="fade-right">ELITE STOCK</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
+                <div class="bg-black p-8 md:p-10 border border-white/5 rounded-2xl hover-glow transition-all" data-aos="fade-up">
+                    <i class="fa-brands fa-discord text-4xl text-red-600 mb-6"></i>
+                    <h4 class="font-gaming text-xl md:text-2xl mb-4">Discord Services</h4>
+                    <p class="text-gray-500 text-sm md:text-base mb-8">Premium Nitro, Boosts, and custom server designs with instant delivery, advanced protections</p>
+                    <a href="https://discord.com/channels/1454523521295188115/1455249938337239264" 
+                       class="block w-full py-3 text-center border border-red-600 font-gaming text-[10px] hover:bg-red-600 transition-all">GET ACCESS</a>
+                </div>
+                <div class="bg-black p-8 md:p-10 border border-white/5 rounded-2xl hover-glow transition-all" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-user-gear text-4xl text-red-600 mb-6"></i>
+                    <h4 class="font-gaming text-xl md:text-2xl mb-4">Minecraft Services</h4>
+                    <p class="text-gray-500 text-sm md:text-base mb-8">Minecraft Setups & Custom Plugins & Skripts Making & Advanced Protections</p>
+                    <a href="https://discord.com/channels/1454523521295188115/1455249938337239264" 
+                       class="block w-full py-3 text-center border border-red-600 font-gaming text-[10px] hover:bg-red-600 transition-all">GET ACCESS</a>
+                </div>
+                <div class="bg-black p-8 md:p-10 border border-white/5 rounded-2xl hover-glow transition-all" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-gamepad text-4xl text-red-600 mb-6"></i>
+                    <h4 class="font-gaming text-xl md:text-2xl mb-4">FiveM</h4>
+                    <p class="text-gray-500 text-sm md:text-base mb-8">Professional FiveM scripts & setups, and advanced protections.</p>
+                    <a href="https://discord.com/channels/1454523521295188115/1455249938337239264" 
+                       class="block w-full py-3 text-center border border-red-600 font-gaming text-[10px] hover:bg-red-600 transition-all">GET ACCESS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center border-t border-white/5">
+        <div class="font-gaming text-2xl mb-6">MYSTIC<span class="text-red-600">STORE</span></div>
+        <p class="text-gray-600 font-bold tracking-[0.4em] text-[10px] uppercase mb-4">Led by iTalali & Fahad</p>
+        <p class="text-gray-800 text-[9px] tracking-widest">&copy; 2026 MYSTIC STORE. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: false, mirror: true });
+    </script>
 </body>
 </html>
